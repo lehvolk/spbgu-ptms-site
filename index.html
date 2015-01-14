@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="kafedra">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+    <title>Кафедра теории вероятностей и математической статистики</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/kafedra.css" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.15/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <!-- angular -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bower-angular-translate/2.5.2/angular-translate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bower-angular-translate-loader-static-files/2.0.0/angular-translate-loader-static-files.min.js"></script>
+
+    <!--<script src="js/angular-translate-url-loader.min.js"></script>-->
+    <script src="js/main.js"></script>
+
+</head>
+<body ng-controller="LangController">
+<header id="header">
+    <div class="navbar navbar-default navbar-fixed-top" ng-controller="MenuController">
+        <div class="top">
+            <div class="container">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" translate>MENU_HOME</a></li>
+                        <li><a ng-click="toHistory()" translate>MENU_ABOUT</a></li>
+                        <li><a translate>MENU_STAFF</a></li>
+                        <li><a translate>MENU_NEWS_ARCHIVE</a></li>
+                        <li><a translate>MENU_CONF</a></li>
+                        <li><a scroll-on-click destination="contacts" translate>MENU_CONTACTS</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a ng-click="changeLanguage('ru')"><b>Ru</b></a></li>
+                        <li><a ng-click="changeLanguage('en')"><b>Eng</b></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="business-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- The background image is set in the custom CSS -->
+                    <h1 class="tagline" translate>TITLE</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</header>
+
+<main>
+    <div ng-view class="view-body"></div>
+</main>
+
+<footer id="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 wow bounceInLeft animated">
+                <div class="service">
+                    <div class="icon">
+                        <i class="fa fa-envelope-o"></i>
+                    </div>
+                    <h4>Электронная почта</h4>
+                    <div class="text">
+                        <address>
+                            <a href="mailto:k.volkova@spbu.ru">k.volkova@spbu.ru</a><br>
+                        </address>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="service">
+                    <div class="icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <h4>Телефон</h4>
+                    <div class="service">
+                        <address>
+                            <abbr title="Phone">P:</abbr> (812) 428-42-12<br>
+                        </address>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="service">
+                    <div class="icon">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                    <h4>Адрес</h4>
+                    <div class="service">
+                        <address>
+                            198504, Россия, Санкт-Петербург, <br>
+                            Старый Петергоф, Университетский пр., дом 28.<br>
+                            Аудитории 4512, 4515<br>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<a class="scrollup" style="display: inline;" scroll-on-click destination="header"><i class="fa fa-angle-up"></i></a>
+</body>
+</html>

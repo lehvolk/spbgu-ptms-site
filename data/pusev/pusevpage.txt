@@ -1,0 +1,18 @@
+Это была информация, которую Вы предлагали разместить на сайте кафедры.
+ 
+ФИО: Пусев Руслан Сергеевич
+ 
+e-mail: Ruslan.Pusev@math.spbu.ru
+ 
+Интересы: малые уклонения гауссовских процессов
+ 
+Публикации:
+ 
+A. I. Nazarov, Ya. Yu. Nikitin and R. S. Pusev, Small deviations of Gaussian processes in L_2-norm: exact asymptotics, 
+Transactions of the XXVI International Seminar on Stability Problems for Stochastic Models (Nahariya, Israel, October 22–26, 
+2007), ed. Z. Volkovich, Ort Braude College, Karmiel, Israel, 2007, 153–156
+ 
+Р. С. Пусев, Малые уклонения полей и процессов Матерна в гильбертовой норме, Доклады Академии наук, 422:6 (2008), 741-743
+ 
+А. И. Назаров, Р. С. Пусев, Точная асимптотика малых уклонений в L_2-норме с весом для некоторых 
+гауссовских процессов, Зап. научн. сем. ПОМИ, 364 (2009), 166-199

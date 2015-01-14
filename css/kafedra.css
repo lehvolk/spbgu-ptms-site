@@ -1,0 +1,1181 @@
+body {
+    margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+}
+
+.business-header {
+    height: 200px;
+    background: url("../pictures/bg_section2.png") repeat transparent;
+    padding-top: 48px;
+}
+
+/* adjust the color and text shadow to optimize legibility once you have an image set - you can also change the vertical positioning if desired  */
+.tagline {
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+
+}
+
+.dropdown a:hover {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background: url("../pictures/bg_section2.png") repeat transparent;
+    �olor: rgb(136, 136, 136);
+    padding: 60px 0 0 0;
+}
+
+footer .footer-title {
+    margin: 2% 0 3% 0;
+}
+
+footer .footer-title i {
+    color: #1968b5;
+    margin-right: 7px;
+}
+
+footer h4 {
+    text-transform: uppercase;
+    color: rgb(136, 136, 136);
+}
+
+footer p {
+
+    color: rgb(136, 136, 136);
+}
+
+footer ul li span {
+    float: right;
+}
+
+footer ul.contact-info {
+
+}
+
+footer ul.contact-info li {
+    border-color: transparent;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: rgb(136, 136, 136);
+}
+
+footer ul.contact-info li i {
+    color: rgb(136, 136, 136);
+    margin-right: 10px;
+}
+
+footer ul li {
+    font-size: 13px;
+    line-height: 36px;
+    border-bottom: 1px solid #1c2128;
+}
+
+footer ul li a {
+    color: rgb(136, 136, 136);
+}
+
+footer ul li a:hover {
+    color: #aaaaab;
+}
+
+.top {
+    background: url(../pictures/header_gradient.gif) repeat transparent center center fixed;
+}
+
+/* Teachers ------------------------------------*/
+.teachers {
+    background-color: #e6e6e6;
+    padding-bottom: 2%;
+}
+
+.teachers .title h1 {
+    color: #263d5a;
+    margin-top: 0;
+}
+
+.teachers .title h3 {
+    color: #1968b5;
+    margin-top: 0;
+}
+
+.content_carousel {
+    margin-top: 20px;
+}
+
+#myCarousel {
+    padding-top: 66px;
+    margin-bottom: 0;
+}
+
+.teachers .thumbnails {
+    display: table;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.teachers .carousel-control {
+    background: none;
+    border-color: transparent;
+    color: #2a333f;
+    font-size: 40px;
+    top: 56%;
+}
+
+.thumbnails .console_img {
+    margin-left: 2px;
+    margin-bottom: 0;
+}
+
+.thumbnails .console_img.first {
+    margin: 0;
+}
+
+.thumbnails .console_img.last {
+    margin: 0;
+}
+
+.thumbnails a {
+    height: 65px;
+    padding: 0;
+    width: 63px;
+    display: table;
+}
+
+.thumbnails a img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.thumbnails .tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #0095fc;
+}
+
+.thumbnails .tooltip.bottom .tooltip-inner {
+    background-color: #0095fc;
+    font-size: 11px;
+    text-transform: capitalize;
+    padding: 0 1%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*bxslider*/
+.bx-wrapper {
+    max-width: 100% !important;
+}
+
+.bx-wrapper .bx-viewport {
+    background: transparent !important;
+    border-color: transparent !important;
+    box-shadow: 0 0 0 !important;
+    padding-bottom: 39px;
+    padding-top: 39px;
+}
+
+.bx-wrapper .bx-prev {
+    left: 0 !important;
+
+}
+
+.bx-wrapper .bx-next {
+    right: -7px !important;
+
+}
+
+/*bxslider*/
+
+/* Features ------------------------------------*/
+.features {
+    background: url("../pictures/bg_section2.png") repeat transparent;
+    padding-top: 80px;
+}
+
+.features h1 {
+    margin-top: 0;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.features .row-fluid {
+    margin-bottom: 3%;
+}
+
+.features .fea {
+    text-align: center;
+}
+
+.features .fea img {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+.features .fea:hover img {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+}
+
+.features .title h3 {
+    color: #aaaaab;
+}
+
+.features h4 {
+    text-transform: uppercase;
+}
+
+/* Gallery ------------------------------------*/
+#menu-gallery .grid figcaption h3 {
+    padding: 0 0 0 17px;
+}
+
+#menu-gallery .grid figcaption span {
+    padding: 0 0 0 17px;
+}
+
+#menu-gallery .grid figcaption a.btn {
+    left: 19px;
+    right: 27px;
+    position: absolute;
+}
+
+.gallery .title h1 {
+    color: #263d5a;
+}
+
+.gallery .title h3 {
+    color: #1968b5;
+}
+
+/* Teachers ------------------------------------*/
+.teachers {
+    background-color: #e6e6e6;
+    padding-bottom: 2%;
+}
+
+.teachers .title h1 {
+    color: #263d5a;
+    margin-top: 0;
+}
+
+.teachers .title h3 {
+    color: #1968b5;
+    margin-top: 0;
+}
+
+.content_carousel {
+    margin-top: 20px;
+}
+
+#myCarousel {
+    padding-top: 66px;
+    margin-bottom: 0;
+}
+
+.teachers .thumbnails {
+    display: table;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.teachers .carousel-control {
+    background: none;
+    border-color: transparent;
+    color: #2a333f;
+    font-size: 40px;
+    top: 56%;
+}
+
+.thumbnails .console_img {
+    margin-left: 2px;
+    margin-bottom: 0;
+}
+
+.thumbnails .console_img.first {
+    margin: 0;
+}
+
+.thumbnails .console_img.last {
+    margin: 0;
+}
+
+.thumbnails a {
+    height: 65px;
+    padding: 0;
+    width: 63px;
+    display: table;
+}
+
+.thumbnails a img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.thumbnails .tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #0095fc;
+}
+
+.thumbnails .tooltip.bottom .tooltip-inner {
+    background-color: #0095fc;
+    font-size: 11px;
+    text-transform: capitalize;
+    padding: 0 1%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*bxslider*/
+.bx-wrapper {
+    max-width: 100% !important;
+}
+
+.bx-wrapper .bx-viewport {
+    background: transparent !important;
+    border-color: transparent !important;
+    box-shadow: 0 0 0 !important;
+    padding-bottom: 39px;
+    padding-top: 39px;
+}
+
+.bx-wrapper .bx-prev {
+    left: 0 !important;
+
+}
+
+.bx-wrapper .bx-next {
+    right: -7px !important;
+
+}
+
+/*gallery*/
+.courses ul {
+    display: table;
+    padding: 0;
+    width: 100%;
+}
+
+.courses ul li {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.courses ul li figcaption {
+    background: #263d5a;
+    height: 86%;
+    width: 90%;
+}
+
+.courses ul li figcaption span {
+    color: #aaaaab;
+}
+
+.courses ul li figure img {
+    height: 278px;
+    width: 100%;
+
+}
+
+.courses .info_context {
+    bottom: 10px;
+    position: absolute;
+    width: 89%;
+
+}
+
+.no-touch .cs-style-5 figure:hover img, .cs-style-5 figure.cs-hover img {
+    transform: scale(0.9, 0.7) !important;
+    bottom: 20px;
+}
+
+.courses .info_context .title_context {
+
+}
+
+.courses .grid figcaption a.btn {
+    display: block;
+    margin: 0;
+    border-image: none;
+    box-shadow: 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 2px solid #0F5496;
+    background: #1968b5;
+    text-shadow: 0 0 0;
+    position: relative;
+    float: right;
+    bottom: 0;
+    right: 0;
+}
+
+.courses .grid figcaption a.btn:hover {
+    color: #fff;
+    background: #0095fc;
+}
+
+/* Animation Style */
+.cs-style-5 figure img {
+    z-index: 10;
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
+}
+
+.no-touch .cs-style-5 figure:hover img,
+.cs-style-5 figure.cs-hover img {
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    transform: scale(0.4);
+}
+
+.cs-style-5 figcaption {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.4s;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.no-touch .cs-style-5 figure:hover figcaption,
+.cs-style-5 figure.cs-hover figcaption {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.cs-style-5 figure a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Contact ------------------------------------*/
+.contact {
+    background: #263d5a;
+    padding-bottom: 0;
+    padding-top: 0;
+    position: relative;
+}
+
+.contact p {
+    line-height: 19px;
+
+}
+
+.contact h3 {
+    margin-bottom: 15px;
+}
+
+.contact #contact-form {
+    margin-top: 20px;
+}
+
+.contact textarea {
+    background: #182e4a;
+    border-color: transparent;
+    height: 110px;
+    width: 100%;
+    padding: 0;
+}
+
+.contact button {
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.content_form .btn:hover {
+    background: #0095fc;
+}
+
+/*select*/
+.content_form .chzn-container {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #334864;
+
+}
+
+.content_form .chzn-container-single .chzn-single {
+    background: #182E4A;
+    border-color: transparent;
+    box-shadow: 0 0 0;
+    height: 32px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+
+}
+
+.content_form .chzn-container .chzn-single span {
+    color: #AAAAAB;
+    font-size: 14px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+
+}
+
+.chzn-container-active.chzn-with-drop .chzn-single div b {
+    background-position: -18px 15px;
+}
+
+.chzn-container-active.chzn-with-drop .chzn-single {
+    background: #182E4A !important;
+    border-color: transparent !important;
+    box-shadow: 0 0 0 !important;
+
+}
+
+.chzn-container .chzn-results li.active-result {
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.chzn-container.chzn-with-drop .chzn-drop {
+    background: #182E4A;
+    border-color: transparent;
+
+}
+
+/* Map ------------------------------------*/
+.content_map {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 62%;
+    z-index: 10;
+}
+
+.contact #map {
+    height: 100%;
+
+}
+
+/* Go to top ------------------------------------*/
+.scrollup {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    display: none;
+    background: transparent url("../pictures/to-top.png") center center no-repeat;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.scrollup i {
+    color: #fff;
+    text-align: center;
+    display: block;
+    line-height: 48px;
+    font-size: 20px;
+    margin: 0;
+    width: auto;
+}
+
+.scrollup:hover {
+    opacity: 0.7;
+}
+
+/* W3C*/
+@keyframes mianim {
+    from {
+        top: 100px;
+    }
+    /*Fotograma inicio*/
+    to {
+        top: -50px;
+    }
+    /*Fotograma final*/
+}
+
+/* Mozilla*/
+@-moz-keyframes mianim {
+    from {
+        top: 100px;
+    }
+    to {
+        top: -50px;
+    }
+}
+
+/* Safari y Chrome*/
+@-webkit-keyframes mianim {
+    from {
+        top: 100px;
+    }
+    to {
+        top: -50px;
+    }
+}
+
+@-webkit-keyframes moveFromTop {
+    from {
+        -webkit-transform: translateY(0%);
+    }
+    to {
+        -webkit-transform: translateY(-300%);
+    }
+}
+
+@-moz-keyframes moveFromTop {
+    from {
+        -moz-transform: translateY(0%);
+    }
+    to {
+        -moz-transform: translateY(-300%);
+    }
+}
+
+@-ms-keyframes moveFromTop {
+    from {
+        -ms-transform: translateY(0%);
+    }
+    to {
+        -ms-transform: translateY(-300%);
+    }
+}
+
+@-webkit-keyframes moveFromBottom {
+    from {
+        -webkit-transform: translateY(200%);
+    }
+    to {
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-moz-keyframes moveFromBottom {
+    from {
+        -moz-transform: translateY(200%);
+    }
+    to {
+        -moz-transform: translateY(0%);
+    }
+}
+
+@-ms-keyframes moveFromBottom {
+    from {
+        -ms-transform: translateY(200%);
+    }
+    to {
+        -ms-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes smallToBig {
+    from {
+        -webkit-transform: scale(0.1);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@-moz-keyframes smallToBig {
+    from {
+        -moz-transform: scale(0.1);
+    }
+    to {
+        -moz-transform: scale(1);
+    }
+}
+
+@-ms-keyframes smallToBig {
+    from {
+        -ms-transform: scale(0.1);
+    }
+    to {
+        -ms-transform: scale(1);
+    }
+}
+
+.grid {
+    padding: 20px 20px 100px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+
+.grid li {
+    display: inline-block;
+    width: 440px;
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.grid figure {
+    margin: 0;
+    position: relative;
+}
+
+.grid figure img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+
+.grid figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background: #2c3f52;
+    color: #ed4e6e;
+}
+
+.grid figcaption h3 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.grid figcaption span:before {
+    content: 'by ';
+}
+
+.grid figcaption a {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #ed4e6e;
+    color: #fff;
+}
+
+/* Individual Caption Styles */
+
+/* Caption Style 1 */
+.cs-style-1 figcaption {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.no-touch .cs-style-1 figure:hover figcaption,
+.cs-style-1 figure.cs-hover figcaption {
+    opacity: 1;
+    -webkit-transform: translate(15px, 15px);
+    -moz-transform: translate(15px, 15px);
+    -ms-transform: translate(15px, 15px);
+    transform: translate(15px, 15px);
+}
+
+.cs-style-1 figcaption h3 {
+    margin-top: 70px;
+}
+
+.cs-style-1 figcaption span {
+    display: block;
+}
+
+.cs-style-1 figcaption a {
+    margin-top: 30px;
+}
+
+/* Caption Style 2 */
+.cs-style-2 figure img {
+    z-index: 10;
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
+}
+
+.no-touch .cs-style-2 figure:hover img,
+.cs-style-2 figure.cs-hover img {
+    -webkit-transform: translateY(-90px);
+    -moz-transform: translateY(-90px);
+    -ms-transform: translateY(-90px);
+    transform: translateY(-90px);
+}
+
+.cs-style-2 figcaption {
+    height: 90px;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.cs-style-2 figcaption a {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+/* Caption Style 3 */
+.cs-style-3 figure {
+    overflow: hidden;
+}
+
+.cs-style-3 figure img {
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
+}
+
+.no-touch .cs-style-3 figure:hover img,
+.cs-style-3 figure.cs-hover img {
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-50px);
+}
+
+.cs-style-3 figcaption {
+    height: 100px;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-3 figure:hover figcaption,
+.cs-style-3 figure.cs-hover figcaption {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+}
+
+.cs-style-3 figcaption a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Caption Style 4 */
+.cs-style-4 li {
+    -webkit-perspective: 1700px;
+    -moz-perspective: 1700px;
+    perspective: 1700px;
+    -webkit-perspective-origin: 0 50%;
+    -moz-perspective-origin: 0 50%;
+    perspective-origin: 0 50%;
+}
+
+.cs-style-4 figure {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.cs-style-4 figure > div {
+    overflow: hidden;
+}
+
+.cs-style-4 figure img {
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
+}
+
+.no-touch .cs-style-4 figure:hover img,
+.cs-style-4 figure.cs-hover img {
+    -webkit-transform: translateX(25%);
+    -moz-transform: translateX(25%);
+    -ms-transform: translateX(25%);
+    transform: translateX(25%);
+}
+
+.cs-style-4 figcaption {
+    height: 100%;
+    width: 50%;
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-4 figure:hover figcaption,
+.cs-style-4 figure.cs-hover figcaption {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+}
+
+.cs-style-4 figcaption a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Caption Style 5 */
+.cs-style-5 figure img {
+    z-index: 10;
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
+}
+
+.no-touch .cs-style-5 figure:hover img,
+.cs-style-5 figure.cs-hover img {
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    transform: scale(0.4);
+}
+
+.cs-style-5 figcaption {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.4s;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.no-touch .cs-style-5 figure:hover figcaption,
+.cs-style-5 figure.cs-hover figcaption {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.cs-style-5 figure a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Caption Style 6 */
+.cs-style-6 figure img {
+    z-index: 10;
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
+}
+
+.no-touch .cs-style-6 figure:hover img,
+.cs-style-6 figure.cs-hover img {
+    -webkit-transform: translateY(-50px) scale(0.5);
+    -moz-transform: translateY(-50px) scale(0.5);
+    -ms-transform: translateY(-50px) scale(0.5);
+    transform: translateY(-50px) scale(0.5);
+}
+
+.cs-style-6 figcaption {
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.cs-style-6 figcaption h3 {
+    margin-top: 60%;
+}
+
+.cs-style-6 figcaption a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Caption Style 7 */
+.cs-style-7 li:first-child {
+    z-index: 6;
+}
+
+.cs-style-7 li:nth-child(2) {
+    z-index: 5;
+}
+
+.cs-style-7 li:nth-child(3) {
+    z-index: 4;
+}
+
+.cs-style-7 li:nth-child(4) {
+    z-index: 3;
+}
+
+.cs-style-7 li:nth-child(5) {
+    z-index: 2;
+}
+
+.cs-style-7 li:nth-child(6) {
+    z-index: 1;
+}
+
+.cs-style-7 figure img {
+    z-index: 10;
+}
+
+.cs-style-7 figcaption {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
+    -moz-transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
+    transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 0 0px #2c3f52;
+}
+
+.no-touch .cs-style-7 figure:hover figcaption,
+.cs-style-7 figure.cs-hover figcaption {
+    pointer-events: auto;
+    opacity: 1;
+    height: 130%;
+    box-shadow: 0 0 0 10px #2c3f52;
+}
+
+.cs-style-7 figcaption h3 {
+    margin-top: 86%;
+}
+
+.cs-style-7 figcaption h3,
+.cs-style-7 figcaption span,
+.cs-style-7 figcaption a {
+    opacity: 0;
+    -webkit-transition: opacity 0s;
+    -moz-transition: opacity 0s;
+    transition: opacity 0s;
+}
+
+.cs-style-7 figcaption a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.no-touch .cs-style-7 figure:hover figcaption h3,
+.no-touch .cs-style-7 figure:hover figcaption span,
+.no-touch .cs-style-7 figure:hover figcaption a,
+.cs-style-7 figure.cs-hover figcaption h3,
+.cs-style-7 figure.cs-hover figcaption span,
+.cs-style-7 figure.cs-hover figcaption a {
+    -webkit-transition: opacity 0.3s 0.2s;
+    -moz-transition: opacity 0.3s 0.2s;
+    transition: opacity 0.3s 0.2s;
+    opacity: 1;
+}
+
+@media screen and (max-width: 31.5em) {
+    .grid {
+        padding: 10px 10px 100px 10px;
+    }
+
+    .grid li {
+        width: 100%;
+        min-width: 300px;
+    }
+}
+
+/* ---------------------------------------------- /*
+ * Service
+/* ---------------------------------------------- */
+
+.service {
+    text-align: center;
+    margin: 0 0 40px;
+    color: rgb(136, 136, 136);
+}
+
+.service .icon {
+    font-size: 32px;
+}
+
+.service h4 {
+    text-transform: uppercase;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    margin-top: -10px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.scrollup:hover {
+    opacity: 0.7;
+}
+
+.section-header {
+    margin-left: 38%;
+}
+
+.offset {
+    padding-left: 10px;
+}
+
+.view-body {
+    min-height: 500px;
+    padding-top: 50px;
+}
