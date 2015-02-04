@@ -6,10 +6,10 @@
                 <div ng-repeat="staffItem in staff">
                     <div class="slick-slide slick-cloned">
                         <a class="thumbnail" ng-href="{{itemLink(staffItem)}}">
-                            <img ng-src="{{staffItem.img}}" alt="{{staffItem.name}}"
+                            <img ng-src="{{staffItem.img}}" alt="{{staffItem.name.view()}}"
                                  data-toggle="tooltip"
                                  data-placement="bottom"
-                                 title="{{staffItem.name}}"
+                                 title="{{staffItem.name.view()}}"
                                  style="height: 100px;width: 100px;">
                         </a>
                     </div>

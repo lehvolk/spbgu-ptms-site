@@ -5,7 +5,7 @@
 
             <br/><br/>
 
-            <h1>{{item.name}}</h1>
+            <h1>{{item.name.view()}}</h1>
             <br/>
             <web address="{{item.web}}" ng-if="item.web != null"/>
             <email address="{{item.email}}" ng-if="item.email != null"/>
@@ -14,15 +14,15 @@
             <div ng-if="item.interests != null">
                 <h2>Область научных интересов</h2>
                 <ul class="list-unstyled">
-                    <li ng-repeat="interest in item.interests">{{interest}}</li>
+                    <li ng-repeat="interest in item.interests">{{interest.view()}}</li>
                 </ul>
             </div>
             <div ng-if="item.docs != null">
                 <h2>Методические материалы</h2>
                 <ul class="list-unstyled">
                     <li ng-repeat="doc in item.docs">
-                        <doc address="{{doc.url}}" name="{{doc.name}}" ng-if="doc.type == 'doc'"/>
-                        <pdf address="{{doc.url}}" name="{{doc.name}}" ng-if="doc.type == 'pdf'"/>
+                        <doc address="{{doc.url}}" name="{{doc.name.view()}}" ng-if="doc.type == 'doc'"/>
+                        <pdf address="{{doc.url}}" name="{{doc.name.view()}}" ng-if="doc.type == 'pdf'"/>
                     </li>
                 </ul>
             </div>

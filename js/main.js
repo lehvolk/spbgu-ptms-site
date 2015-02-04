@@ -1,19 +1,31 @@
+var currentLang = 'ru';
+
+var ml = function (ru, eng) {
+    this.view = function () {
+        if (currentLang === 'ru') {
+            return ru;
+        }
+        return eng == null ? ru : eng;
+    };
+};
+
 var staff = {
     data: [
         {
             code: 'anan',
             img: 'data/anan/anan.jpg',
-            name: 'Сергей Михайлович Ананьевский',
+            name: new ml('Сергей Михайлович Ананьевский'),
             email: 'ananjevskii@mail.ru',
-            interests: ['функции концентрации сумм случайных величин', 'проблемы случайного заполнения и случайного покрытия множеств'],
+            interests: [
+                new ml('функции концентрации сумм случайных величин'), new ml('проблемы случайного заполнения и случайного покрытия множеств')],
             docs: [
                 {
-                    name: 'Конспект курса Теория вероятностей',
+                    name: new ml('Конспект курса Теория вероятностей'),
                     url: 'data/anan/Conspect_TV.doc',
                     type: 'doc'
                 },
                 {
-                    name: 'Список вопросов к экзамену по курсу теории вероятностей для специальности "Прикладная математика иинформатика"',
+                    name: new ml('Список вопросов к экзамену по курсу теории вероятностей для специальности "Прикладная математика иинформатика"'),
                     url: 'data/anan/questionsTV.doc',
                     type: 'doc'
                 }
@@ -22,17 +34,17 @@ var staff = {
         {
             code: 'borodin',
             img: 'data/borodin/borodin.jpg',
-            name: 'Андрей Николаевич Бородин',
+            name: new ml('Андрей Николаевич Бородин'),
             email: 'borodin@pdmi.ras.ru',
             web: 'http://www.pdmi.ras.ru/ru/perso/borodin.php',
             docs: [
                 {
-                    name: 'Вопросы по спецкурсу "Случайные процессы"',
+                    name: new ml('Вопросы по спецкурсу "Случайные процессы"'),
                     url: 'data/borodin/borodin_slup.txt',
                     type: 'doc'
                 },
                 {
-                    name: 'Лекции по случайным процессам',
+                    name: new ml('Лекции по случайным процессам'),
                     url: 'data/borodin/borodin_lectures.zip',
                     type: 'doc'
                 }
@@ -41,69 +53,69 @@ var staff = {
         {
             code: 'frolov',
             img: 'data/frolov/frolov.jpg',
-            name: 'Фролов'
+            name: new ml('Фролов')
         },
         {
             code: 'gordin',
             img: 'data/gordin/gordin.jpg',
-            name: 'Гордин'
+            name: new ml('Гордин')
         },
         {
             code: 'gribkova',
             img: 'data/gribkova/gribkova.jpg',
-            name: 'Грибкова'
+            name: new ml('Грибкова')
         },
         {
             code: 'hartov',
             img: 'data/hartov/hartov.jpg',
-            name: 'Хартов'
+            name: new ml('Хартов')
         },
         {
             code: 'ibragimov',
             img: 'data/ibragimov/ibragimov.gif',
-            name: 'Ибрагимов'
+            name: new ml('Ибрагимов')
         },
         {
             code: 'lifshits',
             img: 'data/lifshits/lifshits.jpg',
-            name: 'Лифшиц'
+            name: new ml('Лифшиц')
         },
         {
             code: 'malov',
             img: 'data/malov/malov.jpg',
-            name: 'Малов'
+            name: new ml('Малов')
         },
         {
             code: 'martikainen',
             img: 'data/martikainen/martikainen.jpg',
-            name: 'Мартикайнен'
+            name: new ml('Мартикайнен')
         },
         {
             code: 'nevzorov',
             img: 'data/nevzorov/nevzorov.jpg',
-            name: 'Невзоров'
+            name: new ml('Невзоров')
         },
         {
             code: 'nikitin',
             img: 'data/nikitin/nikitin.gif',
-            name: 'Яков Юрьевич Никитин',
+            name: new ml('Яков Юрьевич Никитин', 'Nikitin'),
             email: 'yanikit47@mail.ru',
             web: 'http://www.math.spbu.ru/user/nikitin/',
-            interests: ['асимптотическая эффективность статистических критериев',
-                'большие уклонения статистических оценок',
-                'непараметрическая статистика',
-                'характеризационные задачи математической статистики',
-                'скорость сходимости в предельных теоремах теории вероятностей и математической статистики',
-                'малые уклонения гауссовских процессов'
+            interests: [new ml('асимптотическая эффективность статистических критериев'),
+                new ml('большие уклонения статистических оценок'),
+                new ml('непараметрическая статистика'),
+                new ml('характеризационные задачи математической статистики'),
+                new ml('скорость сходимости в предельных теоремах теории вероятностей и математической статистики'),
+                new ml('малые уклонения гауссовских процессов')
             ],
             docs: [
                 {
-                    name: 'Вопросы к экзамену по курсу "Дополнительные главы математической статистики"',
+                    name: new ml('Вопросы к экзамену по курсу "Дополнительные главы математической статистики"'),
                     url: 'data/nikitin/nikitin_dopMS.doc',
                     type: 'doc'
                 },
                 {
-                    name: 'Другие методические материалы',
+                    name: new ml('Другие методические материалы'),
                     url: 'http://www.math.spbu.ru/user/nikitin/',
                     type: 'doc'
                 }
@@ -112,32 +124,32 @@ var staff = {
         {
             code: 'petrov',
             img: 'data/petrov/petrov.jpg',
-            name: 'Петров'
+            name: new ml('Петров')
         },
         {
             code: 'pusev',
             img: 'data/pusev/pusev.jpg',
-            name: 'Пусев'
+            name: new ml('Пусев')
         },
         {
             code: 'rusakov',
             img: 'data/rusakov/rusakov.gif',
-            name: 'Русаков'
+            name: new ml('Русаков')
         },
         {
             code: 'solev',
             img: 'data/solev/solev.jpg',
-            name: 'Солев'
+            name: new ml('Солев')
         },
         {
             code: 'vallander',
             img: 'data/vallander/vallander.jpg',
-            name: 'Валландер'
+            name: new ml('Валландер')
         },
         {
             code: 'volkova',
             img: 'data/volkova/volkova.jpg',
-            name: 'Волкова'
+            name: new ml('Волкова')
         }
     ],
     link: function (item) {
@@ -224,7 +236,9 @@ kafedra.controller('MenuController', function ($scope, $location) {
     $scope.item = $filter('byCode')(staff.data, $routeParams.code);
 }).controller('LangController', function ($scope, $translate) {
     $scope.changeLanguage = function (langKey) {
+        currentLang = langKey;
         $translate.use(langKey);
+        $route.reload();
     };
 });;
 
