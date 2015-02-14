@@ -1,3 +1,11 @@
+body {
+    /*font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: "FontAwesome";
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #2c3e50;
+    background-color: #ffffff;
+}
 
 a {
     color: #18bc9c;
@@ -13,7 +21,8 @@ a:focus {
 .business-header {
     height: 200px;
     background: url("../pictures/bg_section2.png") repeat transparent;
-    padding-top: 48px;
+    padding-top: 78px;
+    padding-left: 12%;
 }
 
 /* adjust the color and text shadow to optimize legibility once you have an image set - you can also change the vertical positioning if desired  */
@@ -88,7 +97,9 @@ footer ul li a:hover {
 }
 
 .top {
-    background: url(../pictures/header_gradient.gif) repeat transparent center center fixed;
+    /*background: url(../pictures/header_gradient.gif) repeat transparent center center fixed;*/
+    background-color: #002147;
+    font-size: 19px;
 }
 
 /* Teachers ------------------------------------*/
@@ -1186,4 +1197,16 @@ footer ul li a:hover {
 .view-body {
     min-height: 500px;
     padding-top: 50px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+ul.nav a:hover {
+    color: #18bc9c !important;
+}
+
+.navbar {
+    border: 0px;
 }

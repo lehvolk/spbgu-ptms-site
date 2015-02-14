@@ -2,77 +2,16 @@
     <div class="container">
         <div class="row">
             <h2 class="section-header">Новости</h2>
-            <div class="col-lg-8 col-sm-8">
-                <hr>
-                <p>
-                    09.10.2013
-                    <br/><b>Объявление о конференции.</b>
-                    <br/><a href=" http://www.vilniusconference2014.mif.vu.lt/">11th International Vilnius Conference on
-                    Probability
-                    and Mathematical Statistics</a>
-                    <br/>Вильнюс, Литва, 30 июня - 4 июля 2014 г.
-                    <br/>Окончание ранней регистрации: 1 мая 2014 г.
-                </p>
-
-                <p>
-                    07.10.2013
-                    <br/><b>Объявление о конференции.</b>
-                    <br/><a href=" http://www.ipiran.ru/conference/stabil2014/">XXXII International Seminar on Stability
-                    Problems
-                    for Stochastic Models</a>
-                    <br/>Тронхейм, Норвегия, 16 - 21 июня 2014 г.
-                    <br/>Предоставить доклады необходимо до 1 марта 2014 г.
-                </p>
-
-                <p>
-                    04.10.2013
-                    <br/><b>Объявление о конференции.</b>
-                    <br/><a href=" http://www.gpsd-ulm2014.de/">11th German Probability and Statistics Days</a>
-                    <br/>Ульм, Германия, 4 - 7 марта 2014 г.
-                    <br/>Окончание регистрации: 15 января 2014 г., предоставить доклады необходимо до 30 ноября 2013 г.
-                    <br/>Параллельно пройдет другая конференция <a href=" http://graduiertenkolleg.gpsd-ulm2014.de/">Conference
-                    on
-                    Modeling, Analysis and Simulation in Economathematics</a>
-                    <br/>Ульм, Германия, 6 - 8 марта 2014 г.
-                    <br/>Дополнительной регистрации не требуется.
-                </p>
-
-                <p>
-                    28.09.2013
-                    <br/><b>Объявление о конференции.</b>
-                    <br/><a href=" http://taac.org.ua">III International Scientific Conference of Students and Young Scientists
-                    "Theoretical and Applied Aspects of Cybernetics" (TAAC-2013)</a>
-                    <br/>Киев, 25 - 29 ноября 2013 г.
-                    <br/>Окончание регистрации и предоставления докладов: 20 октября 2013 г.
-                    <br/><a href="files/taac2013_en.pdf">Подробнее...</a>
-                </p>
-
-                <p>
-                    24.08.2013
-                    <br/><b>Трудоустройство.</b>
-                    <br/> Компания ООО «ГАЗПРОМ ЭКСПОРТ» ищет сотрудников в отдел Управления по рискам, окончивших кафедру
-                    Теории
-                    вероятностей и математической статистики.
-                    <br/> <a href="files/Gazprom-export.pdf">Подробнее...</a>
-                </p>
-
-                <p>
-                    04.04.2013
-                    <br/><b>Трудоустройство.</b>
-                    <br/> Международная инвестиционная компания <a href="http://www.worldquant.com "> WorldQuant</a>,
-                    имеющая филиалы в крупнейших городах мира, открывает набор сотрудников, примерно 10 человек. В России у
-                    компании
-                    представлено подразделение research, которое размещается в двух офисах, в Москве и Санкт-Петербурге.
-                    В качестве претендентов на открытые вакансии компанию интересуют выпускники мат-меха, а также студенты 4-5
-                    курсов на перспективу, в основном по специальности теория вероятностей и мат. статистика
-                    для построения, анализа и предсказания финансовых рынков.
-                    <br/>По всем интересующим вопросам обращаться на нашу кафедру (аудитории 4512, 4515).
-                </p>
-
-
-            </div>
-            <div class="col-lg-4 col-sm-4">
-                <img class="imgright" src="pictures/Linnik.jpg" title="Ю.В. Линник"/>
+            <div ng-controller="NewsController">
+                <div ng-repeat="newsItem in topNews">
+                    <p>
+                    {{newsItem.date}}
+                    <br/>
+                        <b>{{newsItem.header.view()}}</b>
+                    <br/>
+                    <span ng-bind-html="showNews(newsItem)"></span>
+                    </p>
+                </div>
             </div>
         </div>
         <hr>
