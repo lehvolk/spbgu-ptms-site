@@ -44,7 +44,7 @@ a.dropdown-toggle > .caret {
 /* Footer */
 footer {
     background: url("../pictures/bg_section2.png") repeat transparent;
-    �olor: rgb(136, 136, 136);
+    color: rgb(136, 136, 136);
     padding: 60px 0 0 0;
 }
 
@@ -69,10 +69,6 @@ footer p {
 
 footer ul li span {
     float: right;
-}
-
-footer ul.contact-info {
-
 }
 
 footer ul.contact-info li {
@@ -103,9 +99,13 @@ footer ul li a:hover {
 
 .top {
     background-color: #002147;
-    font-size: 19px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
+.top a{
+    font-size: 19px;
+}
 /* Teachers ------------------------------------*/
 .teachers {
     background-color: #e6e6e6;
@@ -1228,4 +1228,8 @@ ul.nav a:hover {
 }
 #contacts .fa{
     color: white;
+}
+
+.slick-list{
+    padding-bottom: 30px;
 }

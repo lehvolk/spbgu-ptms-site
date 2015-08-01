@@ -645,17 +645,6 @@ kafedra.controller('MenuController', function ($scope, $location) {
     $scope.itemLink = function (staffItem) {
         return staff.link(staffItem);
     };
-    $timeout(function () {
-        $('.slick-track').slick({
-            infinite: true,
-            slidesToShow: 10,
-            slidesToScroll: 3,
-            autoplay: true,
-            pauseOnDotsHover: false,
-            pauseOnHover: false
-        });
-        $('[data-toggle="tooltip"]').tooltip();
-    }, 100);
 }).controller('PersonalPageController', function ($scope, $routeParams, $filter) {
     $scope.item = $filter('byCode')(staff.data, $routeParams.code);
 }).controller('LangController', function ($scope, $route, $translate, $location, $cookies) {
@@ -751,6 +740,24 @@ kafedra.directive('scrollOnClick', function () {
                 $location.path(attrs.destination + '/' + currentLang);
                 $route.reload();
             });
+        }
+    };
+}).directive('slick', function ($timeout) {
+    return {
+        restrict: 'A',
+        link: function (scope, $elm) {
+            //plugin needs a timeout for proper rendering
+            $timeout(function(){
+                $($elm).slick({
+                    infinite: true,
+                    slidesToShow: 10,
+                    slidesToScroll: 3,
+                    autoplay: true,
+                    pauseOnDotsHover: false,
+                    pauseOnHover: false
+                });
+                $('[data-toggle="tooltip"]').tooltip();
+            }, 100);
         }
     };
 });
