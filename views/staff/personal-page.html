@@ -3,13 +3,13 @@
         <div class="row" ng-model="item">
             <img src="{{item.img}}" align="right" style="{{item.style}} "/>
 
-            <br/><br/>
+            <br><br>
 
             <h1>{{item.name.view()}}</h1>
-            <br/>
+            <br>
             <web address="{{item.web.view()}}" ng-if="item.web != null"/>
             <email address="{{item.email}}" ng-if="item.email != null"/>
-            <br/><br/>
+            <br><br>
 
             <div ng-if="item.interests != null || item.interest != null">
                 <h2 translate>PERS_INTEREST</h2>
@@ -58,10 +58,10 @@
             <div ng-if="item.texts != null">
                 <div ng-repeat="text in item.texts">
                     <div ng-bind-html="text.name.view() | sanitize"></div>
-                    <br/>
+                    <br>
                 </div>
             </div>
-            <br/><br/>
+            <br><br>
         </div>
     </div>
 </section>

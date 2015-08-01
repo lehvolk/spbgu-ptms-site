@@ -9,9 +9,9 @@
                 <div ng-repeat="newsItem in topNews">
                     <p>
                         {{newsItem.date.view()}}
-                        <br/>
+                        <br>
                         <b>{{newsItem.header.view()}}</b>
-                        <br/>
+                        <br>
                         <span ng-bind-html="showNews(newsItem)"></span>
                     </p>
                 </div>

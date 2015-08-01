@@ -1,6 +1,6 @@
 body {
     /*font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-    font-family: "FontAwesome";
+    font-family: 'Noto Serif', serif;
     font-size: 15px;
     line-height: 1.42857143;
     color: #2c3e50;
@@ -10,6 +10,7 @@ body {
 a {
     color: #18bc9c;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:hover,
@@ -18,9 +19,10 @@ a:focus {
     text-decoration: underline;
 }
 
-a.dropdown-toggle> .caret {
+a.dropdown-toggle > .caret {
     margin-top: 0;
 }
+
 .business-header {
     height: 200px;
     background: url("../pictures/bg_section2.png") repeat transparent;
@@ -100,7 +102,6 @@ footer ul li a:hover {
 }
 
 .top {
-    /*background: url(../pictures/header_gradient.gif) repeat transparent center center fixed;*/
     background-color: #002147;
     font-size: 19px;
 }
@@ -1210,10 +1211,21 @@ footer ul li a:hover {
     color: white;
 }
 
+.navbar-brand {
+    color: white !important;
+}
+
+.icon-bar {
+    background-color: white !important;
+}
+
 ul.nav a:hover {
     color: #18bc9c !important;
 }
 
 .navbar {
-    border: 0px;
+    border: 0;
+}
+#contacts .fa{
+    color: white;
 }

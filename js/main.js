@@ -25,11 +25,11 @@ var news = [
         new ml('Объявление о конференции', 'Conference announcement'),
         new ml('<a href="http://www.tvp.ru/"> XVI Всероссийский Симпозиум ' +
             'по прикладной и промышленной математике (осенняя открытая сессия)</a>' +
-            '<br/>г. Сочи–Дагомыс, 27 сентября – 4 октября 2015 г.'
+            '<br>г. Сочи–Дагомыс, 27 сентября – 4 октября 2015 г.'
             ,
             '<a href="http://www.tvp.ru/"> XVI Russian Symposium ' +
             'on Applied and Industrial Mathematics (autumn open session)</a>' +
-            '<br/>Sochi-Dagomis, Russia, September  27 – October 4  2015.'
+            '<br>Sochi-Dagomis, Russia, September  27 – October 4  2015.'
         )
     ),
     new newsItem(
@@ -37,12 +37,12 @@ var news = [
         new ml('Объявление о конференции', 'Conference announcement'),
         new ml(
             '39th Conference on Stochastic Processes and their Applications (SPA)' +
-            '<br/>г. Москва, 24 - 28 июля 2017 г.' +
-            '<br/>Сайт конференции пока в разработке.'
+            '<br>г. Москва, 24 - 28 июля 2017 г.' +
+            '<br>Сайт конференции пока в разработке.'
             ,
             '39th Conference on Stochastic Processes and their Applications (SPA)' +
-            '<br/>Moscow, Russia, July 24 – 28, 2017.' +
-            '<br/>The website is under development, but mark your calendar.'
+            '<br>Moscow, Russia, July 24 – 28, 2017.' +
+            '<br>The website is under development, but mark your calendar.'
         )
     ),
     new newsItem(
@@ -53,12 +53,11 @@ var news = [
             ' Колмогоровская Олимпиада для студентов по теории вероятностей. ' +
             'Формулировки задач олимпиады можно посмотреть ' +
             '<a href="files/olimp2015.pdf">в файле</a>. ' +
-            '<br/>Среди студентов нашей кафедры Д. Егоров (4 курс) второй год подряд ' +
+            '<br>Среди студентов нашей кафедры Д. Егоров (4 курс) второй год подряд ' +
             'победил с огромным отрывом и награжден первой премией! ' +
             'Поздравляем победителя и желаем ему дальнейших успехов в науке, учёбе и соревнованиях!'
             ,
-            'It took place at the Moscow State University the 14th Students Olympiad on Probability Theory. ' +
-            'D. Egorov (4 year education) took the first Prize the second time in a row. We congratulate the winner ' +
+            'D. Egorov (4 years of high education) took the first Prize the second time in a row in the 14th Students Olympiad on Probability Theory of Moscow State University. We congratulate the winner ' +
             'and wish him continued success in science, in education and in competitions!'
         )
     ),
@@ -78,12 +77,12 @@ var news = [
         new ml(
             '<a href="http://www.pdmi.ras.ru/EIMI/2015/Linnik/index.html"> Yu.V.Linnik Centennial Conference' +
             ' "Analytical methods in number theory, probability theory and mathematical statistics"</a>' +
-            ' <br/>г. Санкт-Петербург, 14 - 18 сентября 2015 г.'
+            ' <br>г. Санкт-Петербург, 14 - 18 сентября 2015 г.'
             ,
             '<a href="http://www.pdmi.ras.ru/EIMI/2015/Linnik/index.html"> Yu.V.Linnik Centennial Conference' +
             ' "Analytical methods in number theory, probability theory and mathematical statistics"</a>' +
-            ' <br/>Saint-Peterburg, Russia, September 14 – 18, 2015.' +
-            '<br/>Abstract submission deadline: April 15, 2015.'
+            ' <br>Saint-Peterburg, Russia, September 14 – 18, 2015.' +
+            '<br>Abstract submission deadline: April 15, 2015.'
         )
     ),
     new newsItem(
@@ -99,12 +98,12 @@ var news = [
         new ml('Объявление о конференции', 'Conference announcement'),
         new ml('<a href="http://www.amsa.conf.nstu.ru/amsa2015/"> Third International Workshop ' +
             '“Applied Methods of Statistical Analysis. Nonparametric Approach” – AMSA’2015</a> ' +
-            '<br/>г. Белокуриха, Алтайский край, 14 - 19 сентября 2015 г.' +
-            '<br/>Окончание ранней регистрации: 20 мая 2015 г.',
+            '<br>г. Белокуриха, Алтайский край, 14 - 19 сентября 2015 г.' +
+            '<br>Окончание ранней регистрации: 20 мая 2015 г.',
             '<a href="http://www.amsa.conf.nstu.ru/amsa2015/"> Third International Workshop “Applied ' +
             'Methods of Statistical Analysis. Nonparametric Approach” – AMSA’2015</a>' +
-            ' <br/>Belokurikha, Altai, Russia, September 14 – 19, 2015.' +
-            '<br/>Early registration deadline: May 20, 2015.'
+            ' <br>Belokurikha, Altai, Russia, September 14 – 19, 2015.' +
+            '<br>Early registration deadline: May 20, 2015.'
         )
     )
 
@@ -284,7 +283,7 @@ var staff = {
             }],
             docs: [
                 {
-                name: new ml('Материалы спецсеминара по теории вероятностей: мат-мех, IV курс (2009): <br/>' +
+                name: new ml('Материалы спецсеминара по теории вероятностей: мат-мех, IV курс (2009): <br>' +
                     ' <a href="data/lifshits/seminar09.pdf"> Конспект</a>, <a href="data/lifshits/kajtaqqu07.pdf">' +
                     ' Статья 1</a>, <a href="data/lifshits/kaj_mult.pdf"> Статья 2</a>.'),
                 type: 'html'
