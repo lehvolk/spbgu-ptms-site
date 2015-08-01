@@ -1,0 +1,93 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <h1 class="section-header">Teaching Staff</h1>
+        </div>
+        <br/><br/>
+        <div ng-controller="StaffController" class="row">
+            <div class="slick-track">
+                <div ng-repeat="staffItem in staff">
+                    <div class="slick-slide slick-cloned">
+                        <a class="thumbnail" ng-href="{{itemLink(staffItem)}}">
+                            <img ng-src="{{staffItem.img2}}" alt="{{staffItem.name.view()}}"
+                                 data-toggle="tooltip"
+                                 data-placement="bottom"
+                                 title="{{staffItem.name.view()}}"
+                                 style="height: 100px;width: 100px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p align="left">
+            Professors:
+        </p>
+
+        <p align="left" style="margin-left: 50px">
+            <a href="#/staff/nikitin">
+                Nikitin Ya. Yu.</a> - Chair
+            <br/> <a href="#/staff/borodin">
+            Borodin A. N.
+        </a>
+            <br> <a href="#/staff/frolov">
+            Frolov A. N.
+        </a>
+            <br> <a href="#/staff/ibragimov">
+            Ibragimov I. A.</a> - Member of the RAS
+            <br> <a href="#/staff/frolov">
+            Lifshits M. A.
+        </a>
+            <br> <a href="#/staff/frolov">
+            Nevzorov V.B.
+        </a>
+            <br> <a href="#/staff/petrov">
+            Petrov V. V.
+        </a>
+            <br> <a href="#/staff/zaitsev">
+            Zaitsev A. Yu.
+        </a>
+        </p>
+
+        <p align=left>
+            Associate professors:
+        </p>
+
+        <p align=left, style="margin-left: 50px">
+            <a href="#/staff/anan">
+                Ananievskii S. M.
+            </a>
+            <br> <a href="#/staff/gribkova">
+            Gribkova N. V.
+        </a>
+            <br> <a href="#/staff/khartov">
+            Khartov A. A.
+        </a>
+            <br> <a href="#/staff/malov">
+            Malov S. V.
+        </a>
+            <br> <a href="#/staff/pusev">
+            Pusev R. S.
+        </a>
+            <br> <a href="#/staff/rusakov">
+            Rusakov O. V.
+        </a>
+            <br> <a href="#/staff/solev">
+            Solev V. N.
+        </a>
+            <br> <a href="#/staff/vallander">
+            Vallander S. S.
+        </a>
+            <br> <a href="#/staff/volkova">
+            Volkova K. Yu.
+        </a>
+            <br> <a href="#/staff/yuyakub">
+            Yakubovich Yu. V.
+        </a>
+        </p>
+
+        <br/> <br/>
+
+
+    </div>
+</section>

@@ -18,6 +18,9 @@ a:focus {
     text-decoration: underline;
 }
 
+a.dropdown-toggle> .caret {
+    margin-top: 0;
+}
 .business-header {
     height: 200px;
     background: url("../pictures/bg_section2.png") repeat transparent;
@@ -1188,6 +1191,10 @@ footer ul li a:hover {
 
 .section-header {
     margin-left: 38%;
+}
+
+.section-header-staff {
+    margin-left: 33%;
 }
 
 .offset {

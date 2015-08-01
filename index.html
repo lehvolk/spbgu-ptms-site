@@ -21,8 +21,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <!-- angular -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular-cookies.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bower-angular-translate/2.5.2/angular-translate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bower-angular-translate-loader-static-files/2.0.0/angular-translate-loader-static-files.min.js"></script>
 
@@ -32,16 +33,35 @@
 </head>
 <body ng-controller="LangController">
 <header id="header">
-    <div class="navbar navbar-default navbar-fixed-top" ng-controller="MenuController">
+    <div class="navbar navbar-default navbar-fixed-top" ng-controller="MenuController as menu">
         <div class="top">
             <div class="container">
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="#" translate>MENU_HOME</a></li>
+                        <li><a to-with-lang destination="/" translate>MENU_HOME</a></li>
                         <li><a ng-click="toHistory()" translate>MENU_ABOUT</a></li>
-                        <li><a translate>MENU_STAFF</a></li>
-                        <li><a translate>MENU_NEWS_ARCHIVE</a></li>
-                        <li><a translate>MENU_CONF</a></li>
+                        <li><a to-with-lang destination="/staff/staff" translate>MENU_STAFF</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span translate>MENU_STUDENTS</span> <span class="caret"></span> </a>
+                            <ul class="dropdown-menu">
+                                <li><a to-with-lang destination="/students/diploma" translate>ST1</a></li>
+                                <li><a to-with-lang destination="/students/courses" translate>ST2</a></li>
+                                <li><a href="{{redirect('http://new.math.msu.su/department/probab/',
+                                 'http://new.math.msu.su/department/probab/index-e.html')}}" translate>ST3</a></li>
+                                <li><a href="http://www.mathcs.carleton.edu/probweb" translate>ST4</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span translate>MENU_CONF</span> <span class="caret"></span> </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{redirect('http://www.mathnet.ru/php/conference.phtml?option_lang=rus&eventID=10&confid=178',
+                                'http://www.mathnet.ru/php/conference.phtml?&eventID=10&confid=178&option_lang=eng')}}" translate>C1</a></li>
+                                <li><a href="https://groups.google.com/forum/#!forum/cheb-probability" translate>C2</a></li>
+                                <li><a to-with-lang destination="/conference/conference" translate>C3</a></li>
+                            </ul>
+                        </li>
                         <li><a scroll-on-click destination="contacts" translate>MENU_CONTACTS</a></li>
                     </ul>
 
@@ -68,7 +88,7 @@
 </header>
 
 <main>
-    <div ng-view class="view-body"></div>
+    <div ng-view  autoscroll="true" class="view-body"></div>
 </main>
 
 <footer id="contacts">
@@ -79,7 +99,7 @@
                     <div class="icon">
                         <i class="fa fa-envelope-o"></i>
                     </div>
-                    <h4>Электронная почта</h4>
+                    <h4 translate>FOOTER_EMAIL</h4>
                     <div class="text">
                         <address>
                             <a href="mailto:k.volkova@spbu.ru">k.volkova@spbu.ru</a><br>
@@ -93,10 +113,10 @@
                     <div class="icon">
                         <i class="fa fa-phone"></i>
                     </div>
-                    <h4>Телефон</h4>
+                    <h4 translate>FOOTER_PHONE</h4>
                     <div class="service">
                         <address>
-                            <abbr title="Phone">P:</abbr> (812) 428-42-12<br>
+                            +7 (812) 428-42-12<br>
                         </address>
                     </div>
                 </div>
@@ -107,12 +127,9 @@
                     <div class="icon">
                         <i class="fa fa-map-marker"></i>
                     </div>
-                    <h4>Адрес</h4>
+                    <h4 translate>FOOTER_ADDRESS</h4>
                     <div class="service">
-                        <address>
-                            198504, Россия, Санкт-Петербург, <br>
-                            Старый Петергоф, Университетский пр., дом 28.<br>
-                            Аудитории 4512, 4515<br>
+                        <address translate>AD
                         </address>
                     </div>
                 </div>

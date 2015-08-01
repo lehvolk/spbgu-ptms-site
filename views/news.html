@@ -1,15 +1,18 @@
 <section>
     <div class="container">
+        <img src="pictures/Linnik.jpg" title="Ю.В. Линник" style="padding: 5px; margin-left: 20px; float: right;">
+
         <div class="row">
-            <h2 class="section-header">Новости</h2>
+            <h2 class="section-header" translate>NEWS</h2>
+
             <div ng-controller="NewsController">
                 <div ng-repeat="newsItem in topNews">
                     <p>
-                    {{newsItem.date}}
-                    <br/>
+                        {{newsItem.date.view()}}
+                        <br/>
                         <b>{{newsItem.header.view()}}</b>
-                    <br/>
-                    <span ng-bind-html="showNews(newsItem)"></span>
+                        <br/>
+                        <span ng-bind-html="showNews(newsItem)"></span>
                     </p>
                 </div>
             </div>

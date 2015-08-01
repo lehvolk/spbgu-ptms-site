@@ -1,0 +1,90 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <h1 class="section-header-staff">Преподаватели кафедры</h1>
+        </div>
+
+        <br><br/>
+        <div ng-controller="StaffController" class="row">
+            <div class="slick-track">
+                <div ng-repeat="staffItem in staff">
+                    <div class="slick-slide slick-cloned">
+                        <a class="thumbnail" ng-href="{{itemLink(staffItem)}}">
+                            <img ng-src="{{staffItem.img2}}" alt="{{staffItem.name.view()}}"
+                                 data-toggle="tooltip"
+                                 data-placement="bottom"
+                                 title="{{staffItem.name.view()}}"
+                                 style="height: 100px;width: 100px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-6">
+            <a href="#/staff/nikitin">
+            Никитин Яков Юрьевич </a>- заведующий кафедрой, профессор
+                <br>
+            <br> <a href="#/staff/anan">
+            Ананьевский Сергей Михайлович</a>- доцент
+
+            <br> <a href="#/staff/borodin">
+            Бородин Андрей Николаевич</a> - профессор
+
+            <br> <a href="#/staff/vallander">
+            Валландер Сергей Сергеевич</a> - доцент
+
+            <br> <a href="#/staff/volkova">
+            Волкова Ксения Юрьевна</a>  - доцент
+
+            <br> <a href="#/staff/gribkova">
+            Грибкова Надежда Викторовна</a> - доцент
+
+            <br> <a href="#/staff/zaitsev">
+            Зайцев Андрей Юрьевич</a> - профессор
+
+            <br> <a href="#/staff/ibragimov">
+            Ибрагимов Ильдар Абдуллович</a> - профессор, академик РАН
+
+            <br> <a href="#/staff/lifshits">
+            Лифшиц Михаил Анатольевич</a> - профессор
+
+            <br>  <a href="#/staff/malov">
+            Малов Сергей Васильевич</a> - доцент
+
+            <br> <a href="#/staff/nevzorov">
+            Невзоров Валерий Борисович</a> - профессор
+
+            <br>  <a href="#/staff/petrov">
+            Петров Валентин Владимирович</a> - профессор
+
+            <br> <a href="#/staff/pusev">
+            Пусев Руслан Сергеевич</a>  - доцент
+
+            <br> <a href="#/staff/rusakov">
+            Русаков Олег Витальевич</a> - доцент
+
+            <br> <a href="#/staff/solev">
+            Солев Валентин Николаевич</a> - доцент
+
+            <br> <a href="#/staff/frolov">
+            Фролов Андрей Николаевич</a> - профессор
+
+            <br> <a href="#/staff/khartov">
+            Хартов Алексей Андреевич</a> - доцент
+
+            <br>   <a href="#/staff/yuyakub">
+            Якубович Юрий Владимирович</a>  - доцент
+</div>
+                <div class="col-md-2">
+
+                </div>
+
+        </div>
+        <br><br><br>
+    </div>
+</section>

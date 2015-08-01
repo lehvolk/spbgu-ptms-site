@@ -1,0 +1,67 @@
+<section ng-controller="PersonalPageController">
+    <div class="container">
+        <div class="row" ng-model="item">
+            <img src="{{item.img}}" align="right" style="{{item.style}} "/>
+
+            <br/><br/>
+
+            <h1>{{item.name.view()}}</h1>
+            <br/>
+            <web address="{{item.web.view()}}" ng-if="item.web != null"/>
+            <email address="{{item.email}}" ng-if="item.email != null"/>
+            <br/><br/>
+
+            <div ng-if="item.interests != null || item.interest != null">
+                <h2 translate>PERS_INTEREST</h2>
+                <div ng-if="item.interest != null">
+                    <div ng-bind-html="item.interest.view() | sanitize"></div>
+                </div>
+                <div ng-if="item.interests != null">
+                <ul class=" list-style: disc">
+                    <li ng-repeat="interest in item.interests" ng-bind-html="interest.view() | sanitize">{{interest.view()}}</li>
+                </ul>
+                </div>
+            </div>
+            <div ng-if="item.docs != null || item.doc != null">
+                <h2 translate>PERS_DOC</h2>
+                <div ng-if="item.doc != null">
+                    <div ng-bind-html="item.doc.view() | sanitize"></div>
+                </div>
+                <div ng-if="item.docs != null">
+                <ul class=" list-style: disc">
+                    <li ng-repeat="doc in item.docs">
+                        <div ng-bind-html="doc.name.view() | sanitize" ng-if="doc.type == 'html'"></div>
+                        <doc address="{{doc.url}}" name="{{doc.name.view()}}" ng-if="doc.type == 'doc'"/>
+                        <pdf address="{{doc.url}}" name="{{doc.name.view()}}" ng-if="doc.type == 'pdf'"/>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div ng-if="item.maininterests != null">
+                <h2 translate>PERS_MAININTEREST</h2>
+                <div ng-if="item.maininterests != null">
+                    <ul class=" list-style: disc">
+                        <li ng-repeat="maininterest in item.maininterests">
+                            <div ng-bind-html="maininterest.name.view() | sanitize" ng-if="maininterest.type == 'html'"></div>
+                            <doc address="{{maininterest.url}}" name="{{maininterest.name.view()}}" ng-if="maininterest.type == 'doc'"/>
+                            <pdf address="{{maininterest.url}}" name="{{maininterest.name.view()}}" ng-if="maininterest.type == 'pdf'"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div ng-if="item.papers != null">
+                <h2 translate>PERS_PAPER</h2>
+                <ul class=" list-style: disc">
+                    <li ng-repeat="paper in item.papers">{{paper.view()}}</li>
+                </ul>
+            </div>
+            <div ng-if="item.texts != null">
+                <div ng-repeat="text in item.texts">
+                    <div ng-bind-html="text.name.view() | sanitize"></div>
+                    <br/>
+                </div>
+            </div>
+            <br/><br/>
+        </div>
+    </div>
+</section>
