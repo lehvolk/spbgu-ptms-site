@@ -34,7 +34,7 @@ a.dropdown-toggle > .caret {
 .tagline {
     color: #fff;
     text-shadow: 0 0 10px #000;
-
+    font-size: 30px;
 }
 
 .dropdown a:hover {
@@ -101,10 +101,11 @@ footer ul li a:hover {
     background-color: #002147;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 17px;
 }
 
-.top a{
-    font-size: 19px;
+.top a {
+    font-size: 17px;
 }
 /* Teachers ------------------------------------*/
 .teachers {
@@ -1232,4 +1233,10 @@ ul.nav a:hover {
 
 .slick-list{
     padding-bottom: 30px;
+}
+
+.btn-lang {
+    color: #fff;
+    background-color: #18bc9c;
+    border-color: #18bc9c;
 }

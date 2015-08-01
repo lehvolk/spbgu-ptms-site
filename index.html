@@ -32,7 +32,7 @@
 
 </head>
 <body ng-controller="LangController">
-<header id="header">
+    <header id="header">
 
         <div class="navbar navbar-default navbar-fixed-top top" ng-controller="MenuController as menu">
             <div class="container-fluid">
@@ -54,7 +54,7 @@
                                 <span translate>MENU_STUDENTS</span> <span class="caret"></span> </a>
                             <ul class="dropdown-menu">
                                 <li><a to-with-lang destination="/students/diploma" translate>ST1</a></li>
-                                <li><a to-with-lang destination="/students/courses" translate>ST2</a></li>
+                                <li ng-show="isRu()"><a to-with-lang destination="/students/courses" translate>ST2</a></li>
                                 <li><a href="{{redirect('http://new.math.msu.su/department/probab/',
                                  'http://new.math.msu.su/department/probab/index-e.html')}}" translate>ST3</a></li>
                                 <li><a href="http://www.mathcs.carleton.edu/probweb" translate>ST4</a></li>
@@ -74,8 +74,13 @@
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a ng-click="changeLanguage('ru')"><b>Ru</b></a></li>
-                        <li><a ng-click="changeLanguage('en')"><b>Eng</b></a></li>
+                        <li>
+                            <div class="btn-group">
+                                <button ng-click="changeLanguage('ru')" class="btn navbar-btn"
+                                        ng-class="{'btn-lang' : isRu(), 'btn-default' : !isRu()}">Ru</button>
+                                <button ng-click="changeLanguage('en')" class="btn navbar-btn"
+                                        ng-class="{'btn-lang' : !isRu(), 'btn-default' : isRu()}">Eng</button>
+                            </div>
                     </ul>
             </div>
         </div>
@@ -84,7 +89,7 @@
     <section class="business-header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 center-text">
                     <!-- The background image is set in the custom CSS -->
                     <h1 class="tagline" translate>TITLE</h1>
                 </div>

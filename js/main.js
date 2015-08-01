@@ -648,6 +648,10 @@ kafedra.controller('MenuController', function ($scope, $location) {
 }).controller('PersonalPageController', function ($scope, $routeParams, $filter) {
     $scope.item = $filter('byCode')(staff.data, $routeParams.code);
 }).controller('LangController', function ($scope, $route, $translate, $location, $cookies) {
+    $scope.isRu = function(){
+        return currentLang === 'ru';
+    };
+
     $scope.changeLanguage = function (langKey) {
         var oldLang = currentLang;
         currentLang = langKey;
