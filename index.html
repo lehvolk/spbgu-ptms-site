@@ -28,7 +28,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bower-angular-translate-loader-static-files/2.0.0/angular-translate-loader-static-files.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
     <!--<script src="js/angular-translate-url-loader.min.js"></script>-->
-    <script src="js/main.js"></script>
+    <script src="js/main.js?3"></script>
 
 </head>
 <body ng-controller="LangController">
@@ -154,5 +154,34 @@
     </div>
 </footer>
 <a class="scrollup" style="display: inline;" scroll-on-click destination="header"><i class="fa fa-angle-up"></i></a>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter31812006 = new Ya.Metrika({
+                        id:31812006,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        trackHash:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/31812006" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </body>
 </html>

@@ -245,7 +245,25 @@ var staff = {
                 new ml('оценки точности сильной аппроксимации в принципе инвариантности'),
                 new ml('функции концентрации'),
                 new ml('центральная предельная теорема')
-            ]
+            ],
+            texts: [{
+                name: new ml('<br>Полный список публикаций представлен на различных ресурсах:' +
+                '<ul class=" list-style: decimal">' +
+                '<br><li> <a href="https://www.researchgate.net/profile/Andrei_Zaitsev2">researchgate.net</a></li>' +
+                '<li> <a href="http://www.mathnet.ru/php/person.phtml?option_lang=rus&personid=28702"> Math-Net.Ru</a></li>' +
+                '<li> <a href="https://scholar.google.com/citations?user=aPTFrasAAAAJ&hl=ru">scholar.google.com</a></li>' +
+                '<li> <a href="http://arxiv.org/a/zaitsev_a_1.html">arxiv.org</a></li>' +
+                '</ul>',
+                    '<br>Full list of' +
+                    ' publications on:' +
+                    '<ul class=" list-style: decimal">' +
+                    '<br><li> <a href="https://www.researchgate.net/profile/Andrei_Zaitsev2">researchgate.net</a></li>' +
+                    '<li> <a href="http://www.mathnet.ru/php/person.phtml?option_lang=rus&personid=28702"> Math-Net.Ru</a></li>' +
+                    '<li> <a href="https://scholar.google.com/citations?user=aPTFrasAAAAJ&hl=ru">scholar.google.com</a></li>' +
+                    '<li> <a href="http://arxiv.org/a/zaitsev_a_1.html">arxiv.org</a></li>' +
+                    '</ul>'
+                )
+            }]
         },
         {
             code: 'ibragimov',
@@ -508,9 +526,9 @@ var staff = {
         },
         {
             code: 'frolov',
-            img: 'data/frolov/frolov.jpg',
-            img2: 'data/frolov/frolov2.jpg',
-            style: 'height: 350px; width: 331px; ',
+            img: 'data/frolov/ANfrolov.jpg',
+            img2: 'data/frolov/ANfrolov2.jpg',
+            style: 'height: 350px; width: 282px; ',
             name: new ml('Андрей Николаевич Фролов', 'Andrei Frolov'),
             email: 'Andrei.Frolov@pobox.spbu.ru',
             interests: [new ml('Предельные теоремы теории вероятностей: большие уклонения, малые уклонения, сильные предельные теоремы, закон больших чисел, закон повторного логарифма, закон повторного логарифма в форме Чжуна. Основные работы посвящены исследованию асимптотического поведения приращений сумм независимых случайных величин, случайных полей, процессов с независимыми приращениями, процессов восстановления и обобщенных процессов восстановления. Результаты, в частности, позволяют объединить единой теорией ряд известных теорем: закон больших чисел Колмогорова, закон повторного логарифма Хартмана-Винтнера, закон Эрдеша-Реньи и закон Чёргё-Ревеса. При этом значительное внимание уделено анализу вероятностей больших уклонений (как в случае притяжения к нормальному закону, так и в случаях притяжения к асимметричным устойчивым законам). Имеются работы по большим уклонениям.'),
@@ -640,7 +658,7 @@ kafedra.controller('MenuController', function ($scope, $location) {
     $scope.redirect = function(ruLink, enLink){
         return  currentLang === 'ru' ? ruLink : enLink;
     };
-}).controller('StaffController', function ($scope, $timeout) {
+}).controller('StaffController', function ($scope) {
     $scope.staff = staff.data;
     $scope.itemLink = function (staffItem) {
         return staff.link(staffItem);
